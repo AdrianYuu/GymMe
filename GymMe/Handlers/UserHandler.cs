@@ -12,7 +12,7 @@ namespace GymMe.Handlers
 	{
 		public static Response<List<MsUser>> GetUsers()
 		{
-			List<MsUser> users = UserRepository.GetUsers();
+			var users = UserRepository.GetUsers();
 
 			if(users.Count == 0)
 			{
@@ -34,9 +34,9 @@ namespace GymMe.Handlers
 
 		public static Response<MsUser> GetUserByID(int id)
 		{
-			MsUser user = UserRepository.GetUserByID(id);
+			var user = UserRepository.GetUserByID(id);
 
-			if(user == null)
+			if(user is null)
 			{
 				return new Response<MsUser>
 				{
