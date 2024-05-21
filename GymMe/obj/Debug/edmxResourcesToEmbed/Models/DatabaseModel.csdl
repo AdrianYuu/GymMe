@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LocalDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MsCart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="SupplementID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MsSupplement" Relationship="Self.FK_MsCart_MsSupplement" FromRole="MsCart" ToRole="MsSupplement" />
+    <NavigationProperty Name="MsUser" Relationship="Self.FK_MsCart_MsUser" FromRole="MsCart" ToRole="MsUser" />
+  </EntityType>
+  <EntityType Name="MsSupplement">
+    <Key>
+      <PropertyRef Name="SupplementID" />
+    </Key>
+    <Property Name="SupplementID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplementName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SupplementExpiryDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SupplementPrice" Type="Int32" Nullable="false" />
+    <Property Name="SupplementTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MsCarts" Relationship="Self.FK_MsCart_MsSupplement" FromRole="MsSupplement" ToRole="MsCart" />
+    <NavigationProperty Name="MsSupplementType" Relationship="Self.FK_MsSupplement_ToMsSupplementType" FromRole="MsSupplement" ToRole="MsSupplementType" />
+    <NavigationProperty Name="TransactionDetails" Relationship="Self.FK_TransactionDetail_ToMsSupplement" FromRole="MsSupplement" ToRole="TransactionDetail" />
+  </EntityType>
+  <EntityType Name="MsSupplementType">
+    <Key>
+      <PropertyRef Name="SupplementTypeID" />
+    </Key>
+    <Property Name="SupplementTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplementTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MsSupplements" Relationship="Self.FK_MsSupplement_ToMsSupplementType" FromRole="MsSupplementType" ToRole="MsSupplement" />
+  </EntityType>
+  <EntityType Name="MsUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserDOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserGender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserRole" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MsCarts" Relationship="Self.FK_MsCart_MsUser" FromRole="MsUser" ToRole="MsCart" />
+    <NavigationProperty Name="TransactionHeaders" Relationship="Self.FK_TransactionHeader_ToMsUser" FromRole="MsUser" ToRole="TransactionHeader" />
+  </EntityType>
+  <EntityType Name="TransactionDetail">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+      <PropertyRef Name="SupplementID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" />
+    <Property Name="SupplementID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MsSupplement" Relationship="Self.FK_TransactionDetail_ToMsSupplement" FromRole="TransactionDetail" ToRole="MsSupplement" />
+    <NavigationProperty Name="TransactionHeader" Relationship="Self.FK_TransactionDetail_ToTransactionHeader" FromRole="TransactionDetail" ToRole="TransactionHeader" />
+  </EntityType>
+  <EntityType Name="TransactionHeader">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MsUser" Relationship="Self.FK_TransactionHeader_ToMsUser" FromRole="TransactionHeader" ToRole="MsUser" />
+    <NavigationProperty Name="TransactionDetails" Relationship="Self.FK_TransactionDetail_ToTransactionHeader" FromRole="TransactionHeader" ToRole="TransactionDetail" />
+  </EntityType>
+  <Association Name="FK_MsCart_MsSupplement">
+    <End Role="MsSupplement" Type="Self.MsSupplement" Multiplicity="1" />
+    <End Role="MsCart" Type="Self.MsCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MsSupplement">
+        <PropertyRef Name="SupplementID" />
+      </Principal>
+      <Dependent Role="MsCart">
+        <PropertyRef Name="SupplementID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MsCart_MsUser">
+    <End Role="MsUser" Type="Self.MsUser" Multiplicity="1" />
+    <End Role="MsCart" Type="Self.MsCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MsUser">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="MsCart">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MsSupplement_ToMsSupplementType">
+    <End Role="MsSupplementType" Type="Self.MsSupplementType" Multiplicity="1" />
+    <End Role="MsSupplement" Type="Self.MsSupplement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MsSupplementType">
+        <PropertyRef Name="SupplementTypeID" />
+      </Principal>
+      <Dependent Role="MsSupplement">
+        <PropertyRef Name="SupplementTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionDetail_ToMsSupplement">
+    <End Role="MsSupplement" Type="Self.MsSupplement" Multiplicity="1" />
+    <End Role="TransactionDetail" Type="Self.TransactionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MsSupplement">
+        <PropertyRef Name="SupplementID" />
+      </Principal>
+      <Dependent Role="TransactionDetail">
+        <PropertyRef Name="SupplementID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionHeader_ToMsUser">
+    <End Role="MsUser" Type="Self.MsUser" Multiplicity="1" />
+    <End Role="TransactionHeader" Type="Self.TransactionHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MsUser">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="TransactionHeader">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionDetail_ToTransactionHeader">
+    <End Role="TransactionHeader" Type="Self.TransactionHeader" Multiplicity="1" />
+    <End Role="TransactionDetail" Type="Self.TransactionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionHeader">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="TransactionDetail">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LocalDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MsCarts" EntityType="Self.MsCart" />
+    <EntitySet Name="MsSupplements" EntityType="Self.MsSupplement" />
+    <EntitySet Name="MsSupplementTypes" EntityType="Self.MsSupplementType" />
+    <EntitySet Name="MsUsers" EntityType="Self.MsUser" />
+    <EntitySet Name="TransactionDetails" EntityType="Self.TransactionDetail" />
+    <EntitySet Name="TransactionHeaders" EntityType="Self.TransactionHeader" />
+    <AssociationSet Name="FK_MsCart_MsSupplement" Association="Self.FK_MsCart_MsSupplement">
+      <End Role="MsSupplement" EntitySet="MsSupplements" />
+      <End Role="MsCart" EntitySet="MsCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MsCart_MsUser" Association="Self.FK_MsCart_MsUser">
+      <End Role="MsUser" EntitySet="MsUsers" />
+      <End Role="MsCart" EntitySet="MsCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MsSupplement_ToMsSupplementType" Association="Self.FK_MsSupplement_ToMsSupplementType">
+      <End Role="MsSupplementType" EntitySet="MsSupplementTypes" />
+      <End Role="MsSupplement" EntitySet="MsSupplements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionDetail_ToMsSupplement" Association="Self.FK_TransactionDetail_ToMsSupplement">
+      <End Role="MsSupplement" EntitySet="MsSupplements" />
+      <End Role="TransactionDetail" EntitySet="TransactionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionHeader_ToMsUser" Association="Self.FK_TransactionHeader_ToMsUser">
+      <End Role="MsUser" EntitySet="MsUsers" />
+      <End Role="TransactionHeader" EntitySet="TransactionHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionDetail_ToTransactionHeader" Association="Self.FK_TransactionDetail_ToTransactionHeader">
+      <End Role="TransactionHeader" EntitySet="TransactionHeaders" />
+      <End Role="TransactionDetail" EntitySet="TransactionDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

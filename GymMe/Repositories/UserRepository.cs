@@ -10,27 +10,33 @@ namespace GymMe.Repositories
 	{
 		public static List<MsUser> GetUsers()
 		{
-			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			var db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.ToList();
 		}
 
-		public static MsUser GetUserByID(int id)
+		public static MsUser GetUserById(int id)
 		{
-			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			var db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.Find(id);
+		}
+
+		public static MsUser GetUserByUsername(string username)
+		{
+			var db = DatabaseSingleton.GetInstance();
+			return db.MsUsers.Where(x => x.UserName == username).FirstOrDefault();
 		}
 
 		public static bool CreateUser(MsUser user)
 		{
-			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			var db = DatabaseSingleton.GetInstance();
 			db.MsUsers.Add(user);
 			return db.SaveChanges() > 0;
 		}
 
 		public static bool UpdateUser(MsUser user)
 		{
-			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
-			MsUser updatedUser = db.MsUsers.Find(user.UserID);
+			var db = DatabaseSingleton.GetInstance();
+			var updatedUser = db.MsUsers.Find(user.UserID);
 
 			if (updatedUser == null)
 			{

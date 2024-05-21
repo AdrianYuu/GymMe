@@ -11,7 +11,7 @@ namespace GymMe.Factories
 		public static MsUser Create(string userName, string userEmail, string userPassword, DateTime userDOB, string userGender, string userRole)
 		{
 			var user = new MsUser()
-			{ 
+			{
 				UserName = userName,
 				UserEmail = userEmail,
 				UserPassword = userPassword,
