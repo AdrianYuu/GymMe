@@ -1,6 +1,7 @@
 ﻿using GymMe.Controllers;
 using GymMe.Models;
 using GymMe.Modules;
+using GymMe.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace GymMe.Views
 {
 	public partial class HomePage : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
+        protected string UserRole { get; set; }
+        protected void Page_Load(object sender, EventArgs e)
 		{
 			if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
 			{
@@ -35,9 +37,21 @@ namespace GymMe.Views
 
 				Session["user"] = response.Payload;
 			}
+			
 			MsUser user = (MsUser)Session["user"];
 
-            UserRoleText.InnerText = user.UserRole;
+			// Set UserRole variable to view customer data if admin
+            if (user.UserRole == "Admin")
+            {
+                UserRole = "Admin";
+            }
+
+			// Fetch Customer Data
+			List<MsUser> UsersList = UserRepository.GetUsers();
+            List<MsUser> CustomerUsers = UsersList.Where(usr => usr.UserRole == "Customer").ToList();
+			
+			GVCustomerData.DataSource = CustomerUsers;
+			GVCustomerData.DataBind();
         }
-	}
+    }
 }

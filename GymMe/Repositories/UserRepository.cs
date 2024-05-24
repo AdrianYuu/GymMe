@@ -52,5 +52,11 @@ namespace GymMe.Repositories
 
 			return db.SaveChanges() > 0;
 		}
+
+		public static List<MsUser> GetAllUsers()
+		{
+            var db = DatabaseSingleton.GetInstance();
+			return db.MsUsers.ToList();
+        }
 	}
 }
