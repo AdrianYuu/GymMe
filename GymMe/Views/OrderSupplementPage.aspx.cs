@@ -1,4 +1,5 @@
 ﻿using GymMe.Controllers;
+using GymMe.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,9 @@ namespace GymMe.Views
 
                 Session["user"] = response.Payload;
             }
+
+            GVSupplementData.DataSource = SupplementRepository.GetAllSupplement();
+            GVSupplementData.DataBind();
         }
     }
 }

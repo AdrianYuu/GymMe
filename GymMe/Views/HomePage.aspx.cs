@@ -40,12 +40,8 @@ namespace GymMe.Views
 			
 			MsUser user = (MsUser)Session["user"];
 
-			// Set UserRole variable to view customer data if admin
-            if (user.UserRole == "Admin")
-            {
-                UserRole = "Admin";
-            }
-
+            UserRole = user.UserRole;
+         
 			// Fetch Customer Data
 			List<MsUser> UsersList = UserRepository.GetUsers();
             List<MsUser> CustomerUsers = UsersList.Where(usr => usr.UserRole == "Customer").ToList();

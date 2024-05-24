@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Davin\\GymMe\\GymMe\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\views\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\views\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\views\\registerpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\registerpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\views\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\factories\\userfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\factories\\userfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|e:\\davin\\gymme\\gymme\\gymme\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:GymMe\\Views\\NavBar.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:GymMe\\Views\\NavBar.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,110 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterPage.aspx",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\RegisterPage.aspx",
-              "RelativeDocumentMoniker": "GymMe\\Views\\RegisterPage.aspx",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\RegisterPage.aspx",
-              "RelativeToolTip": "GymMe\\Views\\RegisterPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-24T11:06:42.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserFactory.cs",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Factories\\UserFactory.cs",
-              "RelativeDocumentMoniker": "GymMe\\Factories\\UserFactory.cs",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Factories\\UserFactory.cs",
-              "RelativeToolTip": "GymMe\\Factories\\UserFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T11:01:27.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "GymMe\\Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "GymMe\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T10:40:33.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomePage.aspx.cs",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\HomePage.aspx.cs",
-              "RelativeDocumentMoniker": "GymMe\\Views\\HomePage.aspx.cs",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\HomePage.aspx.cs",
-              "RelativeToolTip": "GymMe\\Views\\HomePage.aspx.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T10:18:41.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomePage.aspx",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\HomePage.aspx",
-              "RelativeDocumentMoniker": "GymMe\\Views\\HomePage.aspx",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\HomePage.aspx",
-              "RelativeToolTip": "GymMe\\Views\\HomePage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-24T08:30:24.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterPage.aspx.cs",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\RegisterPage.aspx.cs",
-              "RelativeDocumentMoniker": "GymMe\\Views\\RegisterPage.aspx.cs",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\RegisterPage.aspx.cs",
-              "RelativeToolTip": "GymMe\\Views\\RegisterPage.aspx.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADAAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T11:01:37.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavBar.Master",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master",
-              "RelativeDocumentMoniker": "GymMe\\Views\\NavBar.Master",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master",
-              "RelativeToolTip": "GymMe\\Views\\NavBar.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-24T06:25:36.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NavBar.Master.cs",
-              "DocumentMoniker": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master.cs",
-              "RelativeDocumentMoniker": "GymMe\\Views\\NavBar.Master.cs",
-              "ToolTip": "E:\\Davin\\GymMe\\GymMe\\GymMe\\Views\\NavBar.Master.cs",
-              "RelativeToolTip": "GymMe\\Views\\NavBar.Master.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T06:20:45.962Z",
-              "EditorCaption": ""
             }
           ]
         }
