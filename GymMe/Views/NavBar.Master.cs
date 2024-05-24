@@ -1,6 +1,7 @@
 ﻿using GymMe.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -11,14 +12,22 @@ namespace GymMe.Views
 {
     public partial class NavBar : System.Web.UI.MasterPage
     {
+        protected string UserRole { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] != null)
+            {
+                MsUser user = (MsUser)Session["user"];
 
-        }
-
-        protected void LBLogout_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Views/LogoutPage.aspx");
+                if (user.UserRole == "Admin")
+                {
+                    UserRole = "Admin";
+                }
+                else if (user.UserRole == "Customer")
+                {
+                    UserRole = "Customer";
+                }
+            }
         }
     }
 }

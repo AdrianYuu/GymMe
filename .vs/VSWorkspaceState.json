@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\GymMe",
-    "\\GymMe\\bin",
-    "\\GymMe\\Views"
+    "\\GymMe\\bin\\roslyn"
   ],
   "SelectedNode": "\\GymMe.sln",
   "PreviewInSolutionExplorer": false
