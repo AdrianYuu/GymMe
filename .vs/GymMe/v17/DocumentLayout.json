@@ -1,7 +1,108 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Davin\\GymMe\\GymMe\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\ordersupplementpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\ordersupplementpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\ordersupplementpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\ordersupplementpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\profilepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\profilepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\navbar.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\navbar.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\logoutpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\logoutpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\homepage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\homepage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\historypage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\historypage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\controllers\\supplementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\controllers\\supplementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\handlers\\supplementhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\handlers\\supplementhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\handlers\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\handlers\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\repositories\\supplementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\repositories\\supplementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\logoutpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\logoutpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\registerpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\registerpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\profilepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\profilepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\ordersupplementpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\ordersupplementpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\views\\historypage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\views\\historypage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|c:\\users\\adria\\onedrive\\desktop\\psd_project\\gymme\\gymme\\factories\\userfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ACA9E46-7B54-4D0D-AF86-DED84807426B}|GymMe\\GymMe.csproj|solutionrelative:gymme\\factories\\userfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +123,331 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\RegisterPage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\RegisterPage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\RegisterPage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\RegisterPage.aspx.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowCwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:38:58.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomePage.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx.designer.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\HomePage.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx.designer.cs",
+              "RelativeToolTip": "GymMe\\Views\\HomePage.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:37:59.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomePage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\HomePage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\HomePage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:31:19.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderSupplementPage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\OrderSupplementPage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\OrderSupplementPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:30:02.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogoutPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LogoutPage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\LogoutPage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LogoutPage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\LogoutPage.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:27:50.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderSupplementPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\OrderSupplementPage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\OrderSupplementPage.aspx.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAjwCkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:29:30.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomePage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\HomePage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HomePage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\HomePage.aspx.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwCMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:26:11.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LoginPage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\LoginPage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LoginPage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\LoginPage.aspx.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:27:30.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavBar.Master.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\NavBar.Master.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\NavBar.Master.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\NavBar.Master.cs",
+              "RelativeToolTip": "GymMe\\Views\\NavBar.Master.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:32:13.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfilePage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\ProfilePage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\ProfilePage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\ProfilePage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\ProfilePage.aspx.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:30:19.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Handlers\\UserHandler.cs",
+              "RelativeDocumentMoniker": "GymMe\\Handlers\\UserHandler.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Handlers\\UserHandler.cs",
+              "RelativeToolTip": "GymMe\\Handlers\\UserHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:25:25.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NavBar.Master",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\NavBar.Master",
+              "RelativeDocumentMoniker": "GymMe\\Views\\NavBar.Master",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\NavBar.Master",
+              "RelativeToolTip": "GymMe\\Views\\NavBar.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:32:05.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SupplementHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Handlers\\SupplementHandler.cs",
+              "RelativeDocumentMoniker": "GymMe\\Handlers\\SupplementHandler.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Handlers\\SupplementHandler.cs",
+              "RelativeToolTip": "GymMe\\Handlers\\SupplementHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:33:41.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GymMe\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GymMe\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:25:11.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HistoryPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HistoryPage.aspx.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\HistoryPage.aspx.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HistoryPage.aspx.cs",
+              "RelativeToolTip": "GymMe\\Views\\HistoryPage.aspx.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:26:05.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SupplementController.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Controllers\\SupplementController.cs",
+              "RelativeDocumentMoniker": "GymMe\\Controllers\\SupplementController.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Controllers\\SupplementController.cs",
+              "RelativeToolTip": "GymMe\\Controllers\\SupplementController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:35:19.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LogoutPage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LogoutPage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\LogoutPage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\LogoutPage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\LogoutPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:31:54.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SupplementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Repositories\\SupplementRepository.cs",
+              "RelativeDocumentMoniker": "GymMe\\Repositories\\SupplementRepository.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Repositories\\SupplementRepository.cs",
+              "RelativeToolTip": "GymMe\\Repositories\\SupplementRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:29:46.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterPage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\RegisterPage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\RegisterPage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\RegisterPage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\RegisterPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:30:35.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderSupplementPage.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx.designer.cs",
+              "RelativeDocumentMoniker": "GymMe\\Views\\OrderSupplementPage.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\OrderSupplementPage.aspx.designer.cs",
+              "RelativeToolTip": "GymMe\\Views\\OrderSupplementPage.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:30:16.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProfilePage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\ProfilePage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\ProfilePage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\ProfilePage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\ProfilePage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:30:16.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HistoryPage.aspx",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HistoryPage.aspx",
+              "RelativeDocumentMoniker": "GymMe\\Views\\HistoryPage.aspx",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Views\\HistoryPage.aspx",
+              "RelativeToolTip": "GymMe\\Views\\HistoryPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-24T23:26:02.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GymMe\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "GymMe\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:25:36.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Helpers\\Helper.cs",
+              "RelativeDocumentMoniker": "GymMe\\Helpers\\Helper.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Helpers\\Helper.cs",
+              "RelativeToolTip": "GymMe\\Helpers\\Helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:25:30.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserFactory.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Factories\\UserFactory.cs",
+              "RelativeDocumentMoniker": "GymMe\\Factories\\UserFactory.cs",
+              "ToolTip": "C:\\Users\\adria\\OneDrive\\Desktop\\PSD_Project\\GymMe\\GymMe\\Factories\\UserFactory.cs",
+              "RelativeToolTip": "GymMe\\Factories\\UserFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:25:23.337Z",
+              "EditorCaption": ""
             }
           ]
         }

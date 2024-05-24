@@ -23,20 +23,25 @@ namespace GymMe.Views
             {
                 string cookie = Request.Cookies["user_cookie"].Value;
 
-                var response = UserController.LoginUserByCookie(cookie);
+                var rs = UserController.LoginUserByCookie(cookie);
 
-                if (!response.Success)
+                if (!rs.Success)
                 {
                     Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
                     Response.Redirect("~/Views/LoginPage.aspx");
                     return;
                 }
 
-                Session["user"] = response.Payload;
+                Session["user"] = rs.Payload;
             }
 
-            GVSupplementData.DataSource = SupplementRepository.GetAllSupplement();
-            GVSupplementData.DataBind();
+            var response = SupplementController.GetSupplements();
+
+            if (response.Success)
+            {
+                GVSupplementData.DataSource = response.Payload;
+                GVSupplementData.DataBind();
+            }
         }
     }
 }

@@ -92,13 +92,15 @@
     <Content Include="Views\HistoryPage.aspx" />
     <Content Include="Views\HomePage.aspx" />
     <Content Include="Views\LoginPage.aspx" />
-    <Content Include="Views\Logout.aspx" />
+    <Content Include="Views\LogoutPage.aspx" />
     <Content Include="Views\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
     <Content Include="Views\RegisterPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\SupplementController.cs" />
+    <Compile Include="Handlers\SupplementHandler.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Factories\UserFactory.cs" />
@@ -162,12 +164,12 @@
     <Compile Include="Views\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Logout.aspx.cs">
-      <DependentUpon>Logout.aspx</DependentUpon>
+    <Compile Include="Views\LogoutPage.aspx.cs">
+      <DependentUpon>LogoutPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Logout.aspx.designer.cs">
-      <DependentUpon>Logout.aspx</DependentUpon>
+    <Compile Include="Views\LogoutPage.aspx.designer.cs">
+      <DependentUpon>LogoutPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\NavBar.Master.cs">
       <DependentUpon>NavBar.Master</DependentUpon>

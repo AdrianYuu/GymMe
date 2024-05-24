@@ -50,7 +50,7 @@
                     <a class="nav-link" href="ProfilePage.aspx">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Logout.aspx">Logout</a>
+                    <a class="nav-link" href="LogoutPage.aspx">Logout</a>
                 </li>
             </ul>
         </div>

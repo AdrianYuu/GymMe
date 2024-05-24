@@ -8,7 +8,7 @@ namespace GymMe.Repositories
 {
     public class SupplementRepository
     {
-        public static List<MsSupplement> GetAllSupplement()
+        public static List<MsSupplement> GetSupplements()
         {
             var db = DatabaseSingleton.GetInstance();
             return db.MsSupplements.ToList();

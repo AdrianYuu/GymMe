@@ -27,23 +27,23 @@ namespace GymMe.Views
 			string password = TxtPassword.Text;
 			bool rememberMe = CBRememberMe.Checked;
 
-			var response = UserController.LoginUser(username, password);
+			var rs = UserController.LoginUser(username, password);
 
-			if(!response.Success)
+			if(!rs.Success)
 			{
-				LblError.Text = response.Message;
+				LblError.Text = rs.Message;
 				return;
 			}
 
             if (rememberMe)
             {
 				HttpCookie cookie = new HttpCookie("user_cookie");
-				cookie.Value = response.Payload.UserID.ToString();
+				cookie.Value = rs.Payload.UserID.ToString();
 				cookie.Expires = DateTime.Now.AddMinutes(15);
 				Response.Cookies.Add(cookie);
             }
 
-			Session["user"] = response.Payload;
+			Session["user"] = rs.Payload;
 			Response.Redirect("~/Views/HomePage.aspx");
         }
 
