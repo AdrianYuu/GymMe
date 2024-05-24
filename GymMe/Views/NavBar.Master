@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.master.cs" Inherits="GymMe.Views.NavBar" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.aspx">GymMe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!--
+                            <ContentTemplate>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Transaction Queue</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Logout</a>
+                                </li>
+                            </ContentTemplate>
+                    -->
+                            <ContentTemplate>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="OrderSupplementPage.aspx">Order Supplement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="History.aspx">History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ProfilePage.aspx">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                     <a class="nav-link" href="Logout.aspx">Logout</a>
+                                </li>
+                            </ContentTemplate>
+            </ul>
+        </div>
+    </nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

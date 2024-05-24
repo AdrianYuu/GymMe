@@ -1,4 +1,5 @@
 ﻿using GymMe.Controllers;
+using GymMe.Models;
 using GymMe.Modules;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,9 @@ namespace GymMe.Views
 
 				Session["user"] = response.Payload;
 			}
-		}
+			MsUser user = (MsUser)Session["user"];
+
+            UserRoleText.InnerText = user.UserRole;
+        }
 	}
 }
