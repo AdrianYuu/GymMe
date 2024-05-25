@@ -11,39 +11,39 @@ namespace GymMe.Repositories
 	{
 		public static List<MsUser> GetUsers()
 		{
-			var db = DatabaseSingleton.GetInstance();
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.ToList();
 		}
 
 		public static MsUser GetUserById(int id)
 		{
-			var db = DatabaseSingleton.GetInstance();
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.Find(id);
 		}
 
 		public static MsUser GetUserByUsername(string username)
 		{
-			var db = DatabaseSingleton.GetInstance();
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.Where(x => x.UserName == username).FirstOrDefault();
 		}
 
 		public static List<MsUser> GetUsersByRole(string role)
 		{
-			var db = DatabaseSingleton.GetInstance();
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.Where(x => x.UserRole == role).ToList();
 		}
 
 		public static bool CreateUser(MsUser user)
 		{
-			var db = DatabaseSingleton.GetInstance();
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			db.MsUsers.Add(user);
 			return db.SaveChanges() > 0;
 		}
 
 		public static bool UpdateUser(MsUser user)
 		{
-			var db = DatabaseSingleton.GetInstance();
-			var updatedUser = db.MsUsers.Find(user.UserID);
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			MsUser updatedUser = db.MsUsers.Find(user.UserID);
 
 			if (updatedUser == null)
 			{

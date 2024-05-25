@@ -8,6 +8,7 @@
 
     <asp:GridView ID="GVSupplementData" runat="server" AutoGenerateColumns="False" CellPadding="6" CssClass="table table-striped table-bordered table-condensed" OnRowDeleting="GVSupplementData_RowDeleting" OnRowEditing="GVSupplementData_RowEditing">
         <Columns>
+            <asp:BoundField DataField="SupplementID" HeaderText="Supplement ID" SortExpression="SupplementID"/>
             <asp:BoundField DataField="SupplementName" HeaderText="Name" SortExpression="SupplementName" />
             <asp:BoundField DataField="SupplementExpiryDate" HeaderText="Expiry Date" SortExpression="SupplementExpiryDate" />
             <asp:BoundField DataField="SupplementPrice" HeaderText="Price" SortExpression="SupplementPrice" />

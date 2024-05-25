@@ -1,4 +1,6 @@
 ﻿using GymMe.Controllers;
+using GymMe.Models;
+using GymMe.Modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;

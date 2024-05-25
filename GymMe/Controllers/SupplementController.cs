@@ -14,5 +14,10 @@ namespace GymMe.Controllers
 		{
 			return SupplementHandler.GetSupplements();
 		}
+
+		public static Response<MsSupplement> DeleteSupplement(int supplementId)
+		{
+			return SupplementHandler.DeleteSupplement(supplementId);
+		}
 	}
 }

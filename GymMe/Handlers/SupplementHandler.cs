@@ -12,7 +12,7 @@ namespace GymMe.Handlers
 	{
 		public static Response<List<MsSupplement>> GetSupplements()
 		{
-			var supplements = SupplementRepository.GetSupplements();
+			List<MsSupplement> supplements = SupplementRepository.GetSupplements();
 
 			if (supplements.Count == 0)
 			{
@@ -29,6 +29,28 @@ namespace GymMe.Handlers
 				Success = true,
 				Message = "Successfully get supplements.",
 				Payload = supplements
+			};
+		}
+
+		public static Response<MsSupplement> DeleteSupplement(int supplementId)
+		{
+			bool isDeleted = SupplementRepository.DeleteSupplement(supplementId);
+
+			if(!isDeleted)
+			{
+				return new Response<MsSupplement>
+				{
+					Success = false,
+					Message = "Failed to delete supplement.",
+					Payload = null
+				};
+			}
+
+			return new Response<MsSupplement>
+			{
+				Success = true,
+				Message = "Successfully delete supplement.",
+				Payload = null
 			};
 		}
 	}

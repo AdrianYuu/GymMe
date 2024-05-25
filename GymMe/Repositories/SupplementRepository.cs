@@ -10,8 +10,23 @@ namespace GymMe.Repositories
     {
         public static List<MsSupplement> GetSupplements()
         {
-            var db = DatabaseSingleton.GetInstance();
+            LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
             return db.MsSupplements.ToList();
         }
-    }
+
+		public static bool DeleteSupplement(int supplementId)
+		{
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			MsSupplement deletedSupplement = db.MsSupplements.Find(supplementId);
+
+			if (deletedSupplement == null)
+			{
+				return false;
+			}
+
+			db.MsSupplements.Remove(deletedSupplement);
+			db.SaveChanges();
+			return true;
+		}
+	}
 }

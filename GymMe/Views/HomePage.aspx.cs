@@ -38,7 +38,7 @@ namespace GymMe.Views
 				Session["user"] = rs.Payload;
 			}
 			
-			var user = Session["user"] as MsUser;
+			MsUser user = Session["user"] as MsUser;
             UserRole = user.UserRole;
 
 			var response = UserController.GetUsersByRole("Customer");

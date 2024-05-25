@@ -42,7 +42,7 @@ namespace GymMe.Views
 					Session["user"] = rs.Payload;
 				}
 
-				var user = Session["user"] as MsUser;
+				MsUser user = Session["user"] as MsUser;
 				TxtUsername.Text = user.UserName;
 				TxtEmail.Text = user.UserEmail;
 				RBGender.SelectedValue = user.UserGender;
@@ -57,7 +57,7 @@ namespace GymMe.Views
 			string gender = RBGender.SelectedValue;
 			string dob = TxtDOB.Text;
 
-			var user = Session["user"] as MsUser;
+			MsUser user = Session["user"] as MsUser;
 
 			var response = UserController.UpdateUserInformation(user.UserID, username, email, gender, dob);
 
@@ -76,7 +76,7 @@ namespace GymMe.Views
 			string oldPassword = TxtOldPassword.Text;
 			string newPassword = TxtNewPassword.Text;
 
-			var user = Session["user"] as MsUser;
+			MsUser user = Session["user"] as MsUser;
 
 			var response = UserController.UpdateUserPassword(user.UserID, oldPassword, newPassword);
 
