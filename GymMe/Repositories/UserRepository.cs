@@ -1,6 +1,7 @@
 ﻿using GymMe.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
@@ -24,6 +25,12 @@ namespace GymMe.Repositories
 		{
 			var db = DatabaseSingleton.GetInstance();
 			return db.MsUsers.Where(x => x.UserName == username).FirstOrDefault();
+		}
+
+		public static List<MsUser> GetUsersByRole(string role)
+		{
+			var db = DatabaseSingleton.GetInstance();
+			return db.MsUsers.Where(x => x.UserRole == role).ToList();
 		}
 
 		public static bool CreateUser(MsUser user)
@@ -50,7 +57,8 @@ namespace GymMe.Repositories
 			updatedUser.UserGender = user.UserGender;
 			updatedUser.UserRole = user.UserRole;
 
-			return db.SaveChanges() > 0;
+			db.SaveChanges();
+			return true;
 		}
 	}
 }

@@ -17,7 +17,7 @@ namespace GymMe.Views
         {
             if (Session["user"] != null)
             {
-                MsUser user = (MsUser)Session["user"];
+                MsUser user = Session["user"] as MsUser;
 
                 if (user.UserRole == "Admin")
                 {
@@ -29,5 +29,5 @@ namespace GymMe.Views
                 }
             }
         }
-    }
+	}
 }

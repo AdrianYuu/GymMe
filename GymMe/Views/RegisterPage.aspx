@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <h1>Register Page</h1>
+
         <div>
             <asp:Label ID="LblUsername" runat="server" Text="Username"></asp:Label>
             <asp:TextBox ID="TxtUsername" runat="server"></asp:TextBox>

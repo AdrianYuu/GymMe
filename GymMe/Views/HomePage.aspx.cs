@@ -38,16 +38,16 @@ namespace GymMe.Views
 				Session["user"] = rs.Payload;
 			}
 			
-			MsUser user = (MsUser)Session["user"];
-
+			var user = Session["user"] as MsUser;
             UserRole = user.UserRole;
-         
-			// Fetch Customer Data
-			List<MsUser> UsersList = UserRepository.GetUsers();
-            List<MsUser> CustomerUsers = UsersList.Where(usr => usr.UserRole == "Customer").ToList();
-			
-			GVCustomerData.DataSource = CustomerUsers;
-			GVCustomerData.DataBind();
+
+			var response = UserController.GetUsersByRole("Customer");
+
+			if(response.Success)
+			{
+				GVCustomerData.DataSource = response.Payload;
+				GVCustomerData.DataBind();
+			}
         }
-    }
+	}
 }
