@@ -11,6 +11,16 @@ namespace GymMe.Views
 {
     public partial class OrderSupplementPage : System.Web.UI.Page
     {
+        private void RefreshGridView()
+        {
+			var response = SupplementController.GetSupplements();
+
+			if (response.Success)
+			{
+				GVSupplementData.DataSource = response.Payload;
+				GVSupplementData.DataBind();
+			}
+		}
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
@@ -35,13 +45,7 @@ namespace GymMe.Views
                 Session["user"] = rs.Payload;
             }
 
-            var response = SupplementController.GetSupplements();
-
-            if (response.Success)
-            {
-                GVSupplementData.DataSource = response.Payload;
-                GVSupplementData.DataBind();
-            }
-        }
+            RefreshGridView();
+		}
     }
 }

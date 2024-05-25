@@ -14,6 +14,18 @@ namespace GymMe.Views
 	public partial class HomePage : System.Web.UI.Page
 	{
         protected string UserRole { get; set; }
+
+		private void RefreshGridView()
+		{
+			var response = UserController.GetUsersByRole("Customer");
+
+			if (response.Success)
+			{
+				GVCustomerData.DataSource = response.Payload;
+				GVCustomerData.DataBind();
+			}
+		}
+
         protected void Page_Load(object sender, EventArgs e)
 		{
 			if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
@@ -41,13 +53,7 @@ namespace GymMe.Views
 			MsUser user = Session["user"] as MsUser;
             UserRole = user.UserRole;
 
-			var response = UserController.GetUsersByRole("Customer");
-
-			if(response.Success)
-			{
-				GVCustomerData.DataSource = response.Payload;
-				GVCustomerData.DataBind();
-			}
-        }
+			RefreshGridView();
+		}
 	}
 }
