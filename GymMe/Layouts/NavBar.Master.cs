@@ -66,7 +66,7 @@ namespace GymMe.Views
 
 		protected void LBManageSupplement_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("~/Views/Admin/ManageSupplementPage.aspx");
+			Response.Redirect("~/Views/Admin/Supplement/ManageSupplementPage.aspx");
 		}
 
 		protected void LBOrderQueue_Click(object sender, EventArgs e)

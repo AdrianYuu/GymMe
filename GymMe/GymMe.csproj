@@ -89,10 +89,12 @@
       <DependentUpon>DatabaseModel.edmx</DependentUpon>
       <LastGenOutput>DatabaseModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\Admin\Supplement\CreateSupplementPage.aspx" />
+    <Content Include="Views\Admin\Supplement\UpdateSupplementPage.aspx" />
     <Content Include="Views\User\HistoryPage.aspx" />
     <Content Include="Views\HomePage.aspx" />
     <Content Include="Views\Auth\LoginPage.aspx" />
-    <Content Include="Views\Admin\ManageSupplementPage.aspx" />
+    <Content Include="Views\Admin\Supplement\ManageSupplementPage.aspx" />
     <Content Include="Views\User\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
     <Content Include="Views\Auth\RegisterPage.aspx" />
@@ -100,7 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\SupplementController.cs" />
+    <Compile Include="Controllers\SupplementTypeController.cs" />
+    <Compile Include="Factories\SupplementFactory.cs" />
     <Compile Include="Handlers\SupplementHandler.cs" />
+    <Compile Include="Handlers\SupplementTypeHandler.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Factories\UserFactory.cs" />
@@ -142,7 +147,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DatabaseSingleton.cs" />
     <Compile Include="Repositories\SupplementRepository.cs" />
+    <Compile Include="Repositories\SupplementTypeRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Views\Admin\Supplement\CreateSupplementPage.aspx.cs">
+      <DependentUpon>CreateSupplementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Supplement\CreateSupplementPage.aspx.designer.cs">
+      <DependentUpon>CreateSupplementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Supplement\UpdateSupplementPage.aspx.cs">
+      <DependentUpon>UpdateSupplementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Supplement\UpdateSupplementPage.aspx.designer.cs">
+      <DependentUpon>UpdateSupplementPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\User\HistoryPage.aspx.cs">
       <DependentUpon>HistoryPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,11 +184,11 @@
     <Compile Include="Views\Auth\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\ManageSupplementPage.aspx.cs">
+    <Compile Include="Views\Admin\Supplement\ManageSupplementPage.aspx.cs">
       <DependentUpon>ManageSupplementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Admin\ManageSupplementPage.aspx.designer.cs">
+    <Compile Include="Views\Admin\Supplement\ManageSupplementPage.aspx.designer.cs">
       <DependentUpon>ManageSupplementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Layouts\NavBar.Master.cs">

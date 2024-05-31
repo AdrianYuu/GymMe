@@ -10,7 +10,7 @@
 </head>
 <body>
     <form runat="server">
-        <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <nav class="navbar navbar-expand-lg bg-dark text-light p-3">
             <div class="container-fluid">
                 <asp:LinkButton ID="LBHome" runat="server" CssClass="nav-link fw-bold fs-4" OnClick="LBHome_Click">GymMe</asp:LinkButton>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,6 @@
                         <li class="nav-item">
                             <asp:Button ID="BtnLogout" runat="server" Text="Logout" CssClass="btn btn-danger" OnClick="BtnLogout_Click"/>
                         </li>
-
                     </ul>
                 </div>
             </div>

@@ -50,6 +50,8 @@ namespace GymMe.Views
 			
 			MsUser user = Session["user"] as MsUser;
 
+			LblRole.Text = "Your role is " + user.UserRole;
+
 			if(user.UserRole == "Admin")
 			{
 				RefreshGridView();

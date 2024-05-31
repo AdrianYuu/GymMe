@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server" class="d-flex flex-column justify-content-center align-items-center text-light w-100 min-vh-100">
         <div class="bg-dark p-5">
-            <p class="fs-3 fw-bold text-center">Login Page</p>
+            <p class="fs-3 fw-bold text-center">Login</p>
             <div class="d-flex flex-column gap-2 mb-2">
                 <asp:Label ID="LblUsername" runat="server" Text="Username"></asp:Label>
                 <asp:TextBox ID="TxtUsername" runat="server" CssClass="form-control"></asp:TextBox>

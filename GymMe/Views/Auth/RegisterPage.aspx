@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server" class="d-flex flex-column justify-content-center align-items-center text-light w-100 min-vh-100">
         <div class="bg-dark p-5">
-            <p class="fs-3 fw-bold text-center">Register Page</p>
+            <p class="fs-3 fw-bold text-center">Register</p>
             <div class="d-flex gap-5">
                 <div>
                     <div class="d-flex flex-column gap-2 mb-2">

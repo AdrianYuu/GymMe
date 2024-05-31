@@ -3,6 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="d-flex justify-content-end">
+        <asp:Label ID="LblRole" runat="server" Text="" CssClass="fw-2 fs-6"></asp:Label>
+    </div>
+
     <asp:Panel ID="PanelAdmin" runat="server" Visible="false">
         <p class="fw-bold fs-2 text-center">Customer Data</p>
         <asp:GridView ID="GVCustomerData" AutoGenerateColumns="False" runat="server" CellPadding="6" CssClass="table table-striped table-bordered table-condensed">

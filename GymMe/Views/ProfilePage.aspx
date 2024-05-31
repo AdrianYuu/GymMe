@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p class="fw-bold fs-2 text-center">Profile Page</p>
+    <p class="fw-bold fs-2 text-center">Profile</p>
     <div class="d-flex gap-5 justify-content-center">
         <div>
             <p class="fs-4">Update Profile Information</p>
