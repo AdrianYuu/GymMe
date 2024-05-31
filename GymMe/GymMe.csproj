@@ -89,14 +89,13 @@
       <DependentUpon>DatabaseModel.edmx</DependentUpon>
       <LastGenOutput>DatabaseModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Views\HistoryPage.aspx" />
+    <Content Include="Views\User\HistoryPage.aspx" />
     <Content Include="Views\HomePage.aspx" />
-    <Content Include="Views\LoginPage.aspx" />
-    <Content Include="Views\LogoutPage.aspx" />
-    <Content Include="Views\ManageSupplementPage.aspx" />
-    <Content Include="Views\OrderSupplementPage.aspx" />
+    <Content Include="Views\Auth\LoginPage.aspx" />
+    <Content Include="Views\Admin\ManageSupplementPage.aspx" />
+    <Content Include="Views\User\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
-    <Content Include="Views\RegisterPage.aspx" />
+    <Content Include="Views\Auth\RegisterPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -144,11 +143,11 @@
     <Compile Include="Repositories\DatabaseSingleton.cs" />
     <Compile Include="Repositories\SupplementRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
-    <Compile Include="Views\HistoryPage.aspx.cs">
+    <Compile Include="Views\User\HistoryPage.aspx.cs">
       <DependentUpon>HistoryPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\HistoryPage.aspx.designer.cs">
+    <Compile Include="Views\User\HistoryPage.aspx.designer.cs">
       <DependentUpon>HistoryPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\HomePage.aspx.cs">
@@ -158,39 +157,32 @@
     <Compile Include="Views\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\LoginPage.aspx.cs">
+    <Compile Include="Views\Auth\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\LoginPage.aspx.designer.cs">
+    <Compile Include="Views\Auth\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\LogoutPage.aspx.cs">
-      <DependentUpon>LogoutPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\LogoutPage.aspx.designer.cs">
-      <DependentUpon>LogoutPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ManageSupplementPage.aspx.cs">
+    <Compile Include="Views\Admin\ManageSupplementPage.aspx.cs">
       <DependentUpon>ManageSupplementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\ManageSupplementPage.aspx.designer.cs">
+    <Compile Include="Views\Admin\ManageSupplementPage.aspx.designer.cs">
       <DependentUpon>ManageSupplementPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\NavBar.Master.cs">
+    <Compile Include="Layouts\NavBar.Master.cs">
       <DependentUpon>NavBar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\NavBar.Master.designer.cs">
+    <Compile Include="Layouts\NavBar.Master.designer.cs">
       <DependentUpon>NavBar.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\OrderSupplementPage.aspx.cs">
+    <Compile Include="Views\User\OrderSupplementPage.aspx.cs">
       <DependentUpon>OrderSupplementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\OrderSupplementPage.aspx.designer.cs">
+    <Compile Include="Views\User\OrderSupplementPage.aspx.designer.cs">
       <DependentUpon>OrderSupplementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\ProfilePage.aspx.cs">
@@ -200,11 +192,11 @@
     <Compile Include="Views\ProfilePage.aspx.designer.cs">
       <DependentUpon>ProfilePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\RegisterPage.aspx.cs">
+    <Compile Include="Views\Auth\RegisterPage.aspx.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\RegisterPage.aspx.designer.cs">
+    <Compile Include="Views\Auth\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -217,7 +209,7 @@
       <DependentUpon>DatabaseModel.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
-    <Content Include="Views\NavBar.Master" />
+    <Content Include="Layouts\NavBar.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

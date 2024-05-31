@@ -13,8 +13,6 @@ namespace GymMe.Views
 {
 	public partial class HomePage : System.Web.UI.Page
 	{
-        protected string UserRole { get; set; }
-
 		private void RefreshGridView()
 		{
 			var response = UserController.GetUsersByRole("Customer");
@@ -30,7 +28,7 @@ namespace GymMe.Views
 		{
 			if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
 			{
-				Response.Redirect("~/Views/LoginPage.aspx");
+				Response.Redirect("~/Views/Auth/LoginPage.aspx");
 				return;
 			}
 
@@ -38,22 +36,25 @@ namespace GymMe.Views
 			{
 				string cookie = Request.Cookies["user_cookie"].Value;
 
-				var rs = UserController.LoginUserByCookie(cookie);
+				var response = UserController.LoginUserByCookie(cookie);
 
-				if (!rs.Success)
+				if (!response.Success)
 				{
 					Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
 					Response.Redirect("~/Views/LoginPage.aspx");
 					return;
 				}
 
-				Session["user"] = rs.Payload;
+				Session["user"] = response.Payload;
 			}
 			
 			MsUser user = Session["user"] as MsUser;
-            UserRole = user.UserRole;
 
-			RefreshGridView();
+			if(user.UserRole == "Admin")
+			{
+				RefreshGridView();
+				PanelAdmin.Visible = true;
+			}
 		}
 	}
 }
