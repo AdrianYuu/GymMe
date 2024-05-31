@@ -68,10 +68,12 @@ namespace GymMe.Views
 
 		protected void GVSupplementData_RowEditing(object sender, GridViewEditEventArgs e)
 		{
-
+			GridViewRow row = GVSupplementData.Rows[e.NewEditIndex];
+			int id = Convert.ToInt32(row.Cells[0].Text);
+			Response.Redirect("~/Views/Admin/Supplement/UpdateSupplementPage.aspx?Id=" + id);
 		}
 
-        protected void LBCreateSupplement_Click(object sender, EventArgs e)
+		protected void LBCreateSupplement_Click(object sender, EventArgs e)
         {
 			Response.Redirect("~/Views/Admin/Supplement/CreateSupplementPage.aspx");
         }

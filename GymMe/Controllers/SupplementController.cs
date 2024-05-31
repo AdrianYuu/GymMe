@@ -15,6 +15,11 @@ namespace GymMe.Controllers
 			return SupplementHandler.GetSupplements();
 		}
 
+		public static Response<MsSupplement> GetSupplementById(int id)
+		{
+			return SupplementHandler.GetSupplementById(id);
+		}
+
 		public static Response<MsSupplement> CreateSupplement(string name, string expiryDate, string price, string supplementTypeId)
 		{
 			string errorMsg = string.Empty;

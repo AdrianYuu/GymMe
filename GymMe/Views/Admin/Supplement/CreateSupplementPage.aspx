@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p class="fw-bold fs-2 text-center">Create Supplement</p>
-
     <div class="d-flex flex-column">
         <div class="d-flex flex-column gap-2 mb-3">
             <asp:Label ID="LblName" runat="server" Text="Name"></asp:Label>
