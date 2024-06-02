@@ -59,9 +59,9 @@ namespace GymMe.Handlers
 		{
 			MsSupplement supplement = SupplementFactory.Create(name, expiryDate, price, supplementTypeId);
 
-			bool isSuccess = SupplementRepository.CreateSupplement(supplement);
+			bool isCreated = SupplementRepository.CreateSupplement(supplement);
 
-			if (!isSuccess)
+			if (!isCreated)
 			{
 				return new Response<MsSupplement>
 				{

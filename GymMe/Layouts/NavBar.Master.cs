@@ -61,12 +61,12 @@ namespace GymMe.Views
 
 		protected void LBHistory_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("~/Views/User/HistoryPage.aspx");
+			Response.Redirect("~/Views/HistoryPage.aspx");
 		}
 
 		protected void LBManageSupplement_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("~/Views/Admin/Supplement/ManageSupplementPage.aspx");
+			Response.Redirect("~/Views/Admin/ManageSupplementPage.aspx");
 		}
 
 		protected void LBOrderQueue_Click(object sender, EventArgs e)

@@ -126,9 +126,9 @@ namespace GymMe.Handlers
 
 			MsUser user = UserFactory.Create(username, email, password, dob, gender, "Customer");
 
-			bool isSuccess = UserRepository.CreateUser(user);
+			bool isCreated = UserRepository.CreateUser(user);
 
-			if(!isSuccess)
+			if(!isCreated)
 			{
 				return new Response<MsUser>
 				{

@@ -1,7 +1,9 @@
 ﻿using GymMe.Controllers;
+using GymMe.Models;
 using GymMe.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -47,5 +49,37 @@ namespace GymMe.Views
 
             RefreshGridView();
 		}
-    }
+
+		protected void GVSupplementData_RowCommand(object sender, GridViewCommandEventArgs e)
+		{
+			if (e.CommandName == "Order")
+			{
+				Control sourceControl = e.CommandSource as Control;
+				GridViewRow row = sourceControl.NamingContainer as GridViewRow;
+				int rowIndex = row.RowIndex;
+
+				//int supplementId = Convert.ToInt32(GVSupplementData.Rows[rowIndex].Cells[0].Text);
+
+				//TextBox txtQuantity = GVSupplementData.Rows[rowIndex].Cells[5].FindControl("TxtQuantity") as TextBox;
+				//int quantity = Convert.ToInt32(txtQuantity.Text);
+
+				//Debug.Print("quantity: " + txtQuantity.Text);
+
+				//MsUser user = Session["user"] as MsUser;
+
+				//var response = CartController.CreateOrUpdateCart(user.UserID, supplementId, quantity);
+
+				//if (response.Success)
+				//{
+				//	LblStatus.ForeColor = System.Drawing.Color.Green;
+				//}
+				//else
+				//{
+				//	LblStatus.ForeColor = System.Drawing.Color.Red;
+				//}
+
+				//LblStatus.Text = response.Message;
+			}
+		}
+	}
 }

@@ -30,16 +30,16 @@ namespace GymMe.Views
 				{
 					string cookie = Request.Cookies["user_cookie"].Value;
 
-					var rs = UserController.LoginUserByCookie(cookie);
+					var response = UserController.LoginUserByCookie(cookie);
 
-					if (!rs.Success)
+					if (!response.Success)
 					{
 						Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
 						Response.Redirect("~/Views/LoginPage.aspx");
 						return;
 					}
 
-					Session["user"] = rs.Payload;
+					Session["user"] = response.Payload;
 				}
 
 				MsUser user = Session["user"] as MsUser;
