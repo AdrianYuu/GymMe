@@ -1,4 +1,5 @@
-﻿using GymMe.Models;
+﻿using GymMe.Factories;
+using GymMe.Models;
 using GymMe.Modules;
 using GymMe.Repositories;
 using System;
@@ -29,6 +30,30 @@ namespace GymMe.Handlers
 				Success = true,
 				Message = "Successfully get transaction details",
 				Payload = transactionDetails
+			};
+		}
+
+		public static Response<TransactionDetail> CreateTransactionDetail(int transactionId, int supplementId, int quantity)
+		{
+			TransactionDetail transactionDetail = TransactionDetailFactory.Create(transactionId, supplementId, quantity);
+
+			bool isCreated = TransactionDetailRepository.CreateTransactionDetail(transactionDetail);
+
+			if (!isCreated)
+			{
+				return new Response<TransactionDetail>()
+				{
+					Success = false,
+					Message = "Failed to createtransaction detail",
+					Payload = null
+				};
+			}
+
+			return new Response<TransactionDetail>()
+			{
+				Success = true,
+				Message = "Successfully create transaction detail",
+				Payload = transactionDetail
 			};
 		}
 	}

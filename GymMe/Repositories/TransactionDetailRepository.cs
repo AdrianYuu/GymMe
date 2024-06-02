@@ -13,5 +13,12 @@ namespace GymMe.Repositories
 			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
 			return db.TransactionDetails.Where(x => x.TransactionID == transacitonId).ToList();
 		}
+
+		public static bool CreateTransactionDetail(TransactionDetail transactionDetail)
+		{
+			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
+			db.TransactionDetails.Add(transactionDetail);
+			return db.SaveChanges() > 0;
+		}
 	}
 }
