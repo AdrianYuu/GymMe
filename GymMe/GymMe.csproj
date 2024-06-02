@@ -95,8 +95,8 @@
     <Content Include="Views\HomePage.aspx" />
     <Content Include="Views\Auth\LoginPage.aspx" />
     <Content Include="Views\Admin\ManageSupplementPage.aspx" />
-    <Content Include="Views\User\CartPage.aspx" />
-    <Content Include="Views\User\OrderSupplementPage.aspx" />
+    <Content Include="Views\Customer\CartPage.aspx" />
+    <Content Include="Views\Customer\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
     <Content Include="Views\Auth\RegisterPage.aspx" />
     <Content Include="Web.config" />
@@ -203,18 +203,18 @@
     <Compile Include="Layouts\NavBar.Master.designer.cs">
       <DependentUpon>NavBar.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\User\CartPage.aspx.cs">
+    <Compile Include="Views\Customer\CartPage.aspx.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\User\CartPage.aspx.designer.cs">
+    <Compile Include="Views\Customer\CartPage.aspx.designer.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\User\OrderSupplementPage.aspx.cs">
+    <Compile Include="Views\Customer\OrderSupplementPage.aspx.cs">
       <DependentUpon>OrderSupplementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\User\OrderSupplementPage.aspx.designer.cs">
+    <Compile Include="Views\Customer\OrderSupplementPage.aspx.designer.cs">
       <DependentUpon>OrderSupplementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\ProfilePage.aspx.cs">

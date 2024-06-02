@@ -102,7 +102,7 @@ namespace GymMe.Handlers
 
 			return new Response<List<MsCart>>()
 			{
-				Success = false,
+				Success = true,
 				Message = "Successfully delete cart",
 				Payload = null
 			};

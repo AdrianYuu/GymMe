@@ -11,7 +11,7 @@ namespace GymMe.Repositories
 		public static List<MsCart> GetCartsByUserId(int id)
 		{
 			LocalDatabaseEntities db = DatabaseSingleton.GetInstance();
-			return db.MsCarts.Where(x => x.CartID == id).ToList();
+			return db.MsCarts.Where(x => x.UserID == id).ToList();
 		}
 
 		public static MsCart GetCartByUserIdAndSupplementId(int userId, int supplementId)

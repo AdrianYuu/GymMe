@@ -24,17 +24,20 @@
                                 <asp:LinkButton ID="LBOrderSupplement" runat="server" CssClass="nav-link text-light" OnClick="LBOrderSupplement_Click">Order Supplement</asp:LinkButton>
                             </li>
                             <li class="nav-item">
-                                <asp:LinkButton ID="LBHistory" runat="server" CssClass="nav-link text-light"  OnClick="LBHistory_Click">History</asp:LinkButton>
+                                <asp:LinkButton ID="LBCart" runat="server" CssClass="nav-link text-light" OnClick="LBCart_Click">Cart</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LBHistory" runat="server" CssClass="nav-link text-light" OnClick="LBHistory_Click">History</asp:LinkButton>
                             </li>
                         </asp:Panel>
 
                         <%-- For Admin --%>
                         <asp:Panel ID="PanelAdmin" runat="server" Visible="false" CssClass="w-100 d-flex">
                             <li class="nav-item">
-                                <asp:LinkButton ID="LBManageSupplement" runat="server" CssClass="nav-link text-light"  OnClick="LBManageSupplement_Click">Manage Supplement</asp:LinkButton>
+                                <asp:LinkButton ID="LBManageSupplement" runat="server" CssClass="nav-link text-light" OnClick="LBManageSupplement_Click">Manage Supplement</asp:LinkButton>
                             </li>
                             <li class="nav-item">
-                                <asp:LinkButton ID="LBOrderQueue" runat="server" CssClass="nav-link text-light"  OnClick="LBOrderQueue_Click">Order Queue</asp:LinkButton>
+                                <asp:LinkButton ID="LBOrderQueue" runat="server" CssClass="nav-link text-light" OnClick="LBOrderQueue_Click">Order Queue</asp:LinkButton>
                             </li>
                             <li class="nav-item">
                                 <asp:LinkButton ID="LBTransactionReport" runat="server" CssClass="nav-link text-light" OnClick="LBTransactionReport_Click">Transaction Report</asp:LinkButton>
@@ -43,10 +46,10 @@
 
                         <%-- For All --%>
                         <li class="nav-item">
-                            <asp:LinkButton ID="LBProfile" runat="server" CssClass="nav-link text-light"  OnClick="LBProfile_Click">Profile</asp:LinkButton>
+                            <asp:LinkButton ID="LBProfile" runat="server" CssClass="nav-link text-light" OnClick="LBProfile_Click">Profile</asp:LinkButton>
                         </li>
                         <li class="nav-item">
-                            <asp:Button ID="BtnLogout" runat="server" Text="Logout" CssClass="btn btn-danger" OnClick="BtnLogout_Click"/>
+                            <asp:Button ID="BtnLogout" runat="server" Text="Logout" CssClass="btn btn-danger" OnClick="BtnLogout_Click" />
                         </li>
                     </ul>
                 </div>

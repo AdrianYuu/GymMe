@@ -56,7 +56,7 @@ namespace GymMe.Views
 
 		protected void LBOrderSupplement_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("~/Views/User/OrderSupplementPage.aspx");
+			Response.Redirect("~/Views/Customer/OrderSupplementPage.aspx");
 		}
 
 		protected void LBHistory_Click(object sender, EventArgs e)
@@ -90,5 +90,10 @@ namespace GymMe.Views
 			Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
 			Response.Redirect("~/Views/Auth/LoginPage.aspx");
 		}
-	}
+
+        protected void LBCart_Click(object sender, EventArgs e)
+        {
+			Response.Redirect("~/Views/Customer/CartPage.aspx");
+		}
+    }
 }

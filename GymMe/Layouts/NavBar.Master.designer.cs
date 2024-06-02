@@ -51,6 +51,15 @@ namespace GymMe.Views
 		protected global::System.Web.UI.WebControls.LinkButton LBOrderSupplement;
 
 		/// <summary>
+		/// LBCart control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.LinkButton LBCart;
+
+		/// <summary>
 		/// LBHistory control.
 		/// </summary>
 		/// <remarks>

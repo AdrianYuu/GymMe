@@ -13,7 +13,7 @@
             <Columns>
                 <asp:BoundField DataField="UserName" HeaderText="Name" SortExpression="UserName" />
                 <asp:BoundField DataField="UserEmail" HeaderText="Email" SortExpression="UserEmail" />
-                <asp:BoundField DataField="UserDOB" HeaderText="Date Of Birth" SortExpression="UserDOB" DataFormatString="{0:dd/MM/yyyy}" HtmlEncode="False" />
+                <asp:BoundField DataField="UserDOB" HeaderText="Date Of Birth" SortExpression="UserDOB" DataFormatString="{0:dd/MM/yyyy}" />
                 <asp:BoundField DataField="UserGender" HeaderText="Gender" SortExpression="UserGender" />
             </Columns>
         </asp:GridView>

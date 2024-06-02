@@ -15,11 +15,15 @@ namespace GymMe.Controllers
 			return CartHandler.GetCartsByUserId(userId);
 		}
 
-		public static Response<MsCart> CreateOrUpdateCart(int userId, int supplementId, int quantity)
+		public static Response<MsCart> CreateOrUpdateCart(int userId, int supplementId, string quantity)
 		{
 			string errorMsg = string.Empty;
 
-			if (quantity <= 0)
+			if (quantity == string.Empty)
+			{
+				errorMsg = "Quantity is required.";
+			}
+			else if(Convert.ToInt32(quantity) <= 0)
 			{
 				errorMsg = "Quantity must be bigger than 0.";
 			}
@@ -34,7 +38,7 @@ namespace GymMe.Controllers
 				};
 			}
 
-			return CartHandler.CreateOrUpdateCart(userId, supplementId, quantity);
+			return CartHandler.CreateOrUpdateCart(userId, supplementId, Convert.ToInt32(quantity));
 		}
 
 		public static Response<List<MsCart>> DeleteCart(int userId)
