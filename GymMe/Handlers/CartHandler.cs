@@ -59,6 +59,7 @@ namespace GymMe.Handlers
 				};
 			}
 
+			cart.CartID = searchedCart.CartID;
 			cart.Quantity += searchedCart.Quantity;
 			bool isUpdated = CartRepository.UpdateCart(cart);
 
@@ -74,7 +75,7 @@ namespace GymMe.Handlers
 
 			return new Response<MsCart>()
 			{
-				Success = false,
+				Success = true,
 				Message = "Successfully update cart",
 				Payload = cart
 			};

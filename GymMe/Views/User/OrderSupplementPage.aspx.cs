@@ -25,6 +25,11 @@ namespace GymMe.Views
 		}
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (!IsPostBack)
+			{
+				RefreshGridView();
+			}
+
 			if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
 			{
 				Response.Redirect("~/Views/LoginPage.aspx");
@@ -46,8 +51,6 @@ namespace GymMe.Views
 
 				Session["user"] = response.Payload;
 			}
-
-			RefreshGridView();
 		}
 
 		protected void GVSupplementData_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -57,13 +60,10 @@ namespace GymMe.Views
 				Control sourceControl = e.CommandSource as Control;
 				GridViewRow row = sourceControl.NamingContainer as GridViewRow;
 				int rowIndex = row.RowIndex;
+				TextBox txtQuantity = GVSupplementData.Rows[rowIndex].Cells[5].FindControl("TxtQuantity") as TextBox;
 
 				int supplementId = Convert.ToInt32(GVSupplementData.Rows[rowIndex].Cells[0].Text);
-
-				TextBox txtQuantity = GVSupplementData.Rows[rowIndex].Cells[5].FindControl("TxtQuantity") as TextBox;
 				int quantity = Convert.ToInt32(txtQuantity.Text);
-
-				Debug.Print("Quantity: " + quantity.ToString());
 
 				MsUser user = Session["user"] as MsUser;
 

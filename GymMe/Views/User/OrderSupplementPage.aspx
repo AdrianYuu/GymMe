@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p class="fw-bold fs-2 text-center">Order Supplement</p>
-    <asp:Label ID="LblStatus" runat="server" Text=""></asp:Label>
+    <asp:Label ID="LblStatus" runat="server" Text="" CssClass="m-2 fs-5"></asp:Label>
     <asp:GridView ID="GVSupplementData" runat="server" AutoGenerateColumns="False" CellPadding="6" CssClass="table table-striped table-bordered table-condensed" OnRowCommand="GVSupplementData_RowCommand">
         <Columns>
             <asp:BoundField DataField="SupplementID" HeaderText="Supplement ID" SortExpression="SupplementName" />
