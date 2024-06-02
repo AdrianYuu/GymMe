@@ -39,6 +39,7 @@ namespace GymMe.Repositories
 
 			updatedSupplement.SupplementName = supplement.SupplementName;
 			updatedSupplement.SupplementPrice = supplement.SupplementPrice;
+			updatedSupplement.SupplementExpiryDate = supplement.SupplementExpiryDate;
 			updatedSupplement.SupplementTypeID = supplement.SupplementTypeID;
 
 			db.SaveChanges();

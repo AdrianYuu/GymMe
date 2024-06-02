@@ -71,11 +71,6 @@ namespace GymMe.Views.Admin.Supplement
 			string price = TxtPrice.Text;
 			string supplementTypeId = DDLSupplementType.SelectedValue;
 
-			Debug.Print(name);
-			Debug.Print(expiryDate);
-			Debug.Print(price);
-			Debug.Print(supplementTypeId);
-
 			var response = SupplementController.CreateSupplement(name, expiryDate, price, supplementTypeId);
 
 			if (!response.Success)

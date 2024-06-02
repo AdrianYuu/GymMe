@@ -61,7 +61,7 @@ namespace GymMe.Handlers
 
 			bool isSuccess = SupplementRepository.CreateSupplement(supplement);
 
-			if(!isSuccess)
+			if (!isSuccess)
 			{
 				return new Response<MsSupplement>
 				{
@@ -79,11 +79,36 @@ namespace GymMe.Handlers
 			};
 		}
 
+		public static Response<MsSupplement> UpdateSupplement(int supplementId, string name, DateTime expiryDate, int price, int supplementTypeId)
+		{
+			MsSupplement supplement = SupplementFactory.Create(name, expiryDate, price, supplementTypeId);
+			supplement.SupplementID = supplementId;
+
+			bool isUpdated = SupplementRepository.UpdateSupplement(supplement);
+
+			if (!isUpdated)
+			{
+				return new Response<MsSupplement>()
+				{
+					Success = false,
+					Message = "Failed to update supplement.",
+					Payload = null
+				};
+			}
+
+			return new Response<MsSupplement>()
+			{
+				Success = true,
+				Message = "Successfully update supplement.",
+				Payload = supplement
+			};
+		}
+
 		public static Response<MsSupplement> DeleteSupplement(int supplementId)
 		{
 			bool isDeleted = SupplementRepository.DeleteSupplement(supplementId);
 
-			if(!isDeleted)
+			if (!isDeleted)
 			{
 				return new Response<MsSupplement>
 				{

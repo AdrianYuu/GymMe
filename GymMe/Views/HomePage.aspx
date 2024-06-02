@@ -8,7 +8,7 @@
     </div>
 
     <asp:Panel ID="PanelAdmin" runat="server" Visible="false">
-        <p class="fw-bold fs-2 text-center">Customer Data</p>
+        <p class="fw-bold fs-2">Customer Data</p>
         <asp:GridView ID="GVCustomerData" AutoGenerateColumns="False" runat="server" CellPadding="6" CssClass="table table-striped table-bordered table-condensed">
             <Columns>
                 <asp:BoundField DataField="UserName" HeaderText="Name" SortExpression="UserName" />
