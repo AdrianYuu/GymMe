@@ -55,7 +55,7 @@
                 </div>
             </div>
         </nav>
-        <div class="px-5 py-4">
+        <div class="px-5 py-4 w-75 m-auto">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
