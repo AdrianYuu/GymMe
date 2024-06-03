@@ -20,11 +20,6 @@ namespace GymMe.Controllers
 			return TransactionHeaderHandler.GetTransactionHeadersByUserId(userId);
 		}
 
-		public static Response<TransactionHeader> CreateTransactionHeader(int userId, DateTime transactionDate, string status)
-		{
-			return TransactionHeaderHandler.CreateTransactionHeader(userId, transactionDate, status);
-		}
-
 		public static Response<TransactionHeader> UpdateTransactionHeader(int transactionId, string status)
 		{
 			return TransactionHeaderHandler.UpdateTransactionHeader(transactionId, status);

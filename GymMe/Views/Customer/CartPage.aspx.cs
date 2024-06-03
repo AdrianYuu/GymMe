@@ -56,8 +56,15 @@ namespace GymMe.Views.User
 
         protected void BtnCheckout_Click(object sender, EventArgs e)
         {
+			MsUser user = Session["user"] as MsUser;
 
-        }
+			var response = CartController.CheckoutCart(user.UserID);
+
+			if(response.Success)
+			{
+				Response.Redirect("~/Views/HomePage.aspx");
+			}
+		}
 
 		protected void BtnClear_Click(object sender, EventArgs e)
 		{

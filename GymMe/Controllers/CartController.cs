@@ -45,5 +45,10 @@ namespace GymMe.Controllers
 		{
 			return CartHandler.DeleteCart(userId);
 		}
+
+		public static Response<List<MsCart>> CheckoutCart(int userId)
+		{
+			return CartHandler.CheckoutCart(userId);
+		}
 	}
 }

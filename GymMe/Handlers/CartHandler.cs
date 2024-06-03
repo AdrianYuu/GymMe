@@ -1,4 +1,5 @@
-﻿using GymMe.Factories;
+﻿using GymMe.Controllers;
+using GymMe.Factories;
 using GymMe.Models;
 using GymMe.Modules;
 using GymMe.Repositories;
@@ -32,6 +33,7 @@ namespace GymMe.Handlers
 				Payload = carts
 			};
 		}
+
 		public static Response<MsCart> CreateOrUpdateCart(int userId, int supplementId, int quantity)
 		{
 			MsCart searchedCart = CartRepository.GetCartByUserIdAndSupplementId(userId, supplementId);
@@ -104,6 +106,70 @@ namespace GymMe.Handlers
 			{
 				Success = true,
 				Message = "Successfully delete cart",
+				Payload = null
+			};
+		}
+
+		public static Response<List<MsCart>> CheckoutCart(int userId)
+		{
+			var firstResponse = TransactionHeaderHandler.CreateTransactionHeader(userId, DateTime.Now, "Unhandled");
+
+			if(!firstResponse.Success)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "Failed to checkout cart.",
+					Payload = null
+				};
+			}
+
+			var secondResponse = GetCartsByUserId(userId);
+
+			if(!secondResponse.Success)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "Failed to checkout cart.",
+					Payload = null
+				};
+			}
+
+			int transactionId = firstResponse.Payload.TransactionID;
+			List<MsCart> carts = secondResponse.Payload;
+
+			foreach(MsCart cart in carts)
+			{
+				var thirdResponse = TransactionDetailHandler.CreateTransactionDetail(transactionId, cart.SupplementID, cart.Quantity);
+
+				if(!thirdResponse.Success)
+				{
+					return new Response<List<MsCart>>()
+					{
+						Success = false,
+						Message = "Failed to checkout cart.",
+						Payload = null
+					};
+				}
+			}
+
+			var fourthResponse = DeleteCart(userId);
+
+			if (!fourthResponse.Success)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "Failed to checkout cart.",
+					Payload = null
+				};
+			}
+
+			return new Response<List<MsCart>>()
+			{
+				Success = true,
+				Message = "Succesfully checkout cart.",
 				Payload = null
 			};
 		}

@@ -16,10 +16,5 @@ namespace GymMe.Controllers
 		{
 			return TransactionDetailHandler.GetTransactionDetailsByTransactionId(transacitonId);
 		}
-
-		public static Response<TransactionDetail> CreateTransactionDetail(int transactionId, int supplementId, int quantity)
-		{
-			return TransactionDetailHandler.CreateTransactionDetail(transactionId, supplementId, quantity);
-		}
 	}
 }
