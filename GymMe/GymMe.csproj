@@ -185,6 +185,9 @@
     <Compile Include="Views\Admin\UpdateSupplementPage.aspx.designer.cs">
       <DependentUpon>UpdateSupplementPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Views\HistoryPage.aspx.cs">
       <DependentUpon>HistoryPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
