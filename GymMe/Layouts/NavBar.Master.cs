@@ -71,7 +71,7 @@ namespace GymMe.Views
 
 		protected void LBOrderQueue_Click(object sender, EventArgs e)
 		{
-
+			Response.Redirect("~/Views/Admin/OrderQueuePage.aspx");
 		}
 
 		protected void LBTransactionReport_Click(object sender, EventArgs e)
