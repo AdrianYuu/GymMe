@@ -21,16 +21,26 @@ namespace GymMe.Views.Admin
                 GVOrderData.DataBind();
             }
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                RefreshGridView();
+                MsUser user = Session["user"] as MsUser;
+                if (user != null && user.UserRole != "Admin")
+                {
+                    Response.Redirect("~/Views/HomePage.aspx");
+                }
+                else
+                {
+                    RefreshGridView();
+                }
             }
         }
+
         protected void GVOrderData_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName == "ChangeStatus")
+            if (e.CommandName == "HandleTransaction")
             {
                 Control sourceControl = e.CommandSource as Control;
                 GridViewRow row = sourceControl.NamingContainer as GridViewRow;
@@ -40,6 +50,21 @@ namespace GymMe.Views.Admin
 
                 TransactionHeaderController.UpdateTransactionHeader(transactionId, "Handled");
                 RefreshGridView();
+            }
+        }
+
+        protected void GVOrderData_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                string status = DataBinder.Eval(e.Row.DataItem, "Status").ToString();
+
+                Button btnHandleTransaction = (Button)e.Row.FindControl("BtnHandleTransaction");
+
+                if (status == "Handled")
+                {
+                    btnHandleTransaction.Enabled = false;
+                }
             }
         }
     }

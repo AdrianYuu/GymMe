@@ -16,6 +16,7 @@ namespace GymMe.Views
                 GVTransactionDetailData.DataBind();
             }
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
