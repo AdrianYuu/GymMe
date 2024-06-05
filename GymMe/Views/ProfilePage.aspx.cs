@@ -1,17 +1,11 @@
 ﻿using GymMe.Controllers;
 using GymMe.Models;
+using GymMe.Views.Base;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace GymMe.Views
 {
-    public partial class ProfilePage : System.Web.UI.Page
+    public partial class ProfilePage : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -19,28 +13,6 @@ namespace GymMe.Views
 			{
 				LblErrorProfile.ForeColor = System.Drawing.Color.Red;
 				LblErrorPassword.ForeColor = System.Drawing.Color.Red;
-
-				if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
-				{
-					Response.Redirect("~/Views/LoginPage.aspx");
-					return;
-				}
-
-				if (Session["user"] == null)
-				{
-					string cookie = Request.Cookies["user_cookie"].Value;
-
-					var response = UserController.LoginUserByCookie(cookie);
-
-					if (!response.Success)
-					{
-						Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
-						Response.Redirect("~/Views/LoginPage.aspx");
-						return;
-					}
-
-					Session["user"] = response.Payload;
-				}
 
 				MsUser user = Session["user"] as MsUser;
 				TxtUsername.Text = user.UserName;

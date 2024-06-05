@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
+    "",
     "\\GymMe",
     "\\GymMe\\Views"
   ],
+  "SelectedNode": "\\GymMe\\Views\\TransactionDetail.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

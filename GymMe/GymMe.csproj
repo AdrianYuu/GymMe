@@ -90,6 +90,7 @@
       <LastGenOutput>DatabaseModel.cs</LastGenOutput>
     </Content>
     <Content Include="Views\Admin\CreateSupplementPage.aspx" />
+    <Content Include="Views\Admin\OrderQueuePage.aspx" />
     <Content Include="Views\Admin\UpdateSupplementPage.aspx" />
     <Content Include="Views\HistoryPage.aspx" />
     <Content Include="Views\HomePage.aspx" />
@@ -99,6 +100,7 @@
     <Content Include="Views\Customer\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
     <Content Include="Views\Auth\RegisterPage.aspx" />
+    <Content Include="Views\TransactionDetail.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -169,12 +171,22 @@
     <Compile Include="Views\Admin\CreateSupplementPage.aspx.designer.cs">
       <DependentUpon>CreateSupplementPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\OrderQueuePage.aspx.cs">
+      <DependentUpon>OrderQueuePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\OrderQueuePage.aspx.designer.cs">
+      <DependentUpon>OrderQueuePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\UpdateSupplementPage.aspx.cs">
       <DependentUpon>UpdateSupplementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Admin\UpdateSupplementPage.aspx.designer.cs">
       <DependentUpon>UpdateSupplementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\HistoryPage.aspx.cs">
       <DependentUpon>HistoryPage.aspx</DependentUpon>
@@ -238,6 +250,13 @@
     </Compile>
     <Compile Include="Views\Auth\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransactionDetail.aspx.cs">
+      <DependentUpon>TransactionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TransactionDetail.aspx.designer.cs">
+      <DependentUpon>TransactionDetail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

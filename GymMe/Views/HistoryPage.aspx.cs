@@ -3,37 +3,65 @@ using GymMe.Models;
 using GymMe.Modules;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using GymMe.Views.Base;
 
 namespace GymMe.Views
 {
-    public partial class HistoryPage : System.Web.UI.Page
+    public partial class HistoryPage : BasePage
     {
-        protected void Page_Load(object sender, EventArgs e)
+		private void RefreshGridView(int userId)
         {
-            if (Session["user"] == null && Request.Cookies["user_cookie"] == null)
+            Response<List<TransactionHeader>> response;
+            
+            if (userId != -1)
             {
-                Response.Redirect("~/Views/Auth/LoginPage.aspx");
-                return;
+                response = TransactionHeaderController.GetTransactionHeadersByUserId(userId);
+            }
+            else
+            {
+                response = TransactionHeaderController.GetTransactionHeaders();
             }
 
-            if (Session["user"] == null)
+
+            if (response.Success)
             {
-                string cookie = Request.Cookies["user_cookie"].Value;
+                GVHistoryData.DataSource = response.Payload;
+                GVHistoryData.DataBind();
+            }
+        }
 
-                var response = UserController.LoginUserByCookie(cookie);
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            MsUser user = Session["user"] as MsUser;
 
-                if (!response.Success)
+            if (!IsPostBack)
+            {
+                if (user.UserRole == "Customer")
                 {
-                    Response.Cookies["user_cookie"].Expires = DateTime.Now.AddDays(-1);
-                    Response.Redirect("~/Views/Auth/LoginPage.aspx");
-                    return;
+                    RefreshGridView(user.UserID);
                 }
+                else
+                {
+                    RefreshGridView(-1);
+                }
+            }
+        }
+        protected void GVHistoryData_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "ViewDetail")
+            {
+                Control sourceControl = e.CommandSource as Control;
+                GridViewRow row = sourceControl.NamingContainer as GridViewRow;
+                int rowIndex = row.RowIndex;
 
-                Session["user"] = response.Payload;
+                int transactionId = Convert.ToInt32(GVHistoryData.Rows[rowIndex].Cells[0].Text);
+
+                string targetUrl = "~/Views/TransactionDetail.aspx";
+                string redirectUrl = $"{targetUrl}?transactionid={transactionId}";
+
+                Response.Redirect(redirectUrl);
             }
         }
     }
