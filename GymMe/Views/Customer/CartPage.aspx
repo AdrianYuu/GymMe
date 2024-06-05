@@ -7,14 +7,14 @@
     <asp:GridView ID="GVCartData" runat="server" AutoGenerateColumns="False" CellPadding="6" CssClass="table table-striped table-bordered table-condensed">
         <Columns>
             <asp:BoundField DataField="MsSupplement.SupplementName" HeaderText="Name" SortExpression="MsSupplement.SupplementName" />
-            <asp:BoundField DataField="MsSupplement.SupplementExpiryDate" HeaderText="Expiry Date" SortExpression="MsSupplement.SupplementExpiryDate" DataFormatString="{0:dd/MM/yyyy}"/>
+            <asp:BoundField DataField="MsSupplement.SupplementExpiryDate" HeaderText="Expiry Date" SortExpression="MsSupplement.SupplementExpiryDate" DataFormatString="{0:dd/MM/yyyy}" />
             <asp:BoundField DataField="MsSupplement.SupplementPrice" HeaderText="Price" SortExpression="MsSupplement.SupplementPrice" />
             <asp:BoundField DataField="MsSupplement.MsSupplementType.SupplementTypeName" HeaderText="Type" SortExpression="MsSupplement.MsSupplementType.SupplementTypeName" />
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
         </Columns>
     </asp:GridView>
-    <div>
-        <asp:Button ID="BtnCheckout" runat="server" Text="Checkout" OnClick="BtnCheckout_Click" CssClass="btn btn-primary"/>
-        <asp:Button ID="BtnClear" runat="server" Text="Clear" OnClick="BtnClear_Click" CssClass="btn btn-danger"/>
-    </div>
+    <asp:Panel ID="PanelBtn" runat="server" Visible="false">
+        <asp:Button ID="BtnCheckout" runat="server" Text="Checkout" OnClick="BtnCheckout_Click" CssClass="btn btn-primary" />
+        <asp:Button ID="BtnClear" runat="server" Text="Clear" OnClick="BtnClear_Click" CssClass="btn btn-danger" />
+    </asp:Panel>
 </asp:Content>

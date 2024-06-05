@@ -100,7 +100,7 @@
     <Content Include="Views\Customer\OrderSupplementPage.aspx" />
     <Content Include="Views\ProfilePage.aspx" />
     <Content Include="Views\Auth\RegisterPage.aspx" />
-    <Content Include="Views\TransactionDetail.aspx" />
+    <Content Include="Views\TransactionDetailPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -251,12 +251,12 @@
     <Compile Include="Views\Auth\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\TransactionDetail.aspx.cs">
-      <DependentUpon>TransactionDetail.aspx</DependentUpon>
+    <Compile Include="Views\TransactionDetailPage.aspx.cs">
+      <DependentUpon>TransactionDetailPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\TransactionDetail.aspx.designer.cs">
-      <DependentUpon>TransactionDetail.aspx</DependentUpon>
+    <Compile Include="Views\TransactionDetailPage.aspx.designer.cs">
+      <DependentUpon>TransactionDetailPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

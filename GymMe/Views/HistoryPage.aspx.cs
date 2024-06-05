@@ -58,8 +58,8 @@ namespace GymMe.Views
 
                 int transactionId = Convert.ToInt32(GVHistoryData.Rows[rowIndex].Cells[0].Text);
 
-                string targetUrl = "~/Views/TransactionDetail.aspx";
-                string redirectUrl = $"{targetUrl}?transactionid={transactionId}";
+                string targetUrl = "~/Views/TransactionDetailPage.aspx";
+                string redirectUrl = $"{targetUrl}?transactionId={transactionId}";
 
                 Response.Redirect(redirectUrl);
             }

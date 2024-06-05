@@ -11,10 +11,11 @@ namespace GymMe.Views.User
 		{
 			var response = CartController.GetCartsByUserId(userId);
 
-			if(response.Success)
+			if (response.Success)
 			{
 				GVCartData.DataSource = response.Payload;
 				GVCartData.DataBind();
+				PanelBtn.Visible = true;
 			}
 		}
 
@@ -27,15 +28,15 @@ namespace GymMe.Views.User
 			RefreshGridView(user.UserID);
 		}
 
-        protected void BtnCheckout_Click(object sender, EventArgs e)
-        {
+		protected void BtnCheckout_Click(object sender, EventArgs e)
+		{
 			MsUser user = Session["user"] as MsUser;
 
 			var response = CartController.CheckoutCart(user.UserID);
 
-			if(response.Success)
+			if (response.Success)
 			{
-				Response.Redirect("~/Views/HomePage.aspx");
+				Response.Redirect("~/Views/HistoryPage.aspx");
 			}
 		}
 
@@ -44,7 +45,7 @@ namespace GymMe.Views.User
 			MsUser user = Session["user"] as MsUser;
 			var response = CartController.DeleteCart(user.UserID);
 
-			if(response.Success)
+			if (response.Success)
 			{
 				Response.Redirect("~/Views/HomePage.aspx");
 			}
