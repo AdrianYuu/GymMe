@@ -174,7 +174,7 @@ namespace GymMe.Handlers
 		{
 			MsUser searchedUser = UserRepository.GetUserByUsername(username);
 
-			if(searchedUser != null && searchedUser.UserName != username)
+			if(searchedUser != null && searchedUser.UserID != userId)
 			{
 				return new Response<MsUser>
 				{

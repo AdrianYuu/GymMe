@@ -11,13 +11,13 @@ namespace GymMe.Views
 {
     public partial class HistoryPage : BasePage
     {
-		private void RefreshGridView(int userId)
+		private void RefreshGridView(int? userId = null)
         {
             Response<List<TransactionHeader>> response;
             
-            if (userId != -1)
+            if (userId.HasValue)
             {
-                response = TransactionHeaderController.GetTransactionHeadersByUserId(userId);
+                response = TransactionHeaderController.GetTransactionHeadersByUserId(userId.Value);
             }
             else
             {
@@ -44,7 +44,7 @@ namespace GymMe.Views
                 }
                 else
                 {
-                    RefreshGridView(-1);
+                    RefreshGridView();
                 }
             }
         }

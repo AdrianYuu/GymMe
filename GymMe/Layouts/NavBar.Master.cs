@@ -76,7 +76,7 @@ namespace GymMe.Views
 
 		protected void LBTransactionReport_Click(object sender, EventArgs e)
 		{
-
+			Response.Redirect("~/Views/Admin/TransactionReportPage.aspx");
 		}
 
 		protected void LBProfile_Click(object sender, EventArgs e)

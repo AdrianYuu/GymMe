@@ -1,4 +1,5 @@
 ﻿using GymMe.Controllers;
+using GymMe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,7 @@ namespace GymMe.Views
             }
 
 			Session["user"] = response.Payload;
+
 			Response.Redirect("~/Views/HomePage.aspx");
         }
 
