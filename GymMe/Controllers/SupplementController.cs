@@ -17,6 +17,16 @@ namespace GymMe.Controllers
 
 		public static Response<MsSupplement> GetSupplementById(int id)
 		{
+			if (id <= 0)
+			{
+				return new Response<MsSupplement>()
+				{
+					Success = false,
+					Message = "Supplement ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return SupplementHandler.GetSupplementById(id);
 		}
 
@@ -40,6 +50,10 @@ namespace GymMe.Controllers
 			{
 				errorMsg = "Price must be at least 3000.";
 			}
+			else if(Convert.ToInt32(supplementTypeId) <= 0)
+			{
+				errorMsg = "Supplement Type ID is not valid.";
+			}
 
 			if (!errorMsg.Equals(string.Empty))
 			{
@@ -58,7 +72,11 @@ namespace GymMe.Controllers
 		{
 			string errorMsg = string.Empty;
 
-			if (name == string.Empty || expiryDate == string.Empty || price == string.Empty || supplementTypeId == "0")
+			if(supplementId <= 0)
+			{
+				errorMsg = "Supplement ID is not valid.";
+			}
+			else if (name == string.Empty || expiryDate == string.Empty || price == string.Empty || supplementTypeId == "0")
 			{
 				errorMsg = "All fields is required to be filled.";
 			}
@@ -73,6 +91,10 @@ namespace GymMe.Controllers
 			else if (Convert.ToInt32(price) < 3000)
 			{
 				errorMsg = "Price must be at least 3000.";
+			}
+			else if (Convert.ToInt32(supplementTypeId) <= 0)
+			{
+				errorMsg = "Supplement Type ID is not valid.";
 			}
 
 			if (!errorMsg.Equals(string.Empty))
@@ -90,6 +112,16 @@ namespace GymMe.Controllers
 
 		public static Response<MsSupplement> DeleteSupplement(int supplementId)
 		{
+			if (supplementId <= 0)
+			{
+				return new Response<MsSupplement>()
+				{
+					Success = false,
+					Message = "Supplement ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return SupplementHandler.DeleteSupplement(supplementId);
 		}
 	}

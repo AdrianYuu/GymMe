@@ -12,6 +12,16 @@ namespace GymMe.Controllers
 	{
 		public static Response<List<MsCart>> GetCartsByUserId(int userId)
 		{
+			if(userId <= 0)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "User ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return CartHandler.GetCartsByUserId(userId);
 		}
 
@@ -19,7 +29,15 @@ namespace GymMe.Controllers
 		{
 			string errorMsg = string.Empty;
 
-			if (quantity == string.Empty)
+			if(userId <= 0)
+			{
+				errorMsg = "User ID is not valid.";
+			}
+			else if(supplementId <= 0)
+			{
+				errorMsg = "Supplement ID is not valid.";
+			}
+			else if (quantity == string.Empty)
 			{
 				errorMsg = "Quantity is required.";
 			}
@@ -43,11 +61,31 @@ namespace GymMe.Controllers
 
 		public static Response<List<MsCart>> DeleteCart(int userId)
 		{
+			if (userId <= 0)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "User ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return CartHandler.DeleteCart(userId);
 		}
 
 		public static Response<List<MsCart>> CheckoutCart(int userId)
 		{
+			if (userId <= 0)
+			{
+				return new Response<List<MsCart>>()
+				{
+					Success = false,
+					Message = "User ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return CartHandler.CheckoutCart(userId);
 		}
 	}

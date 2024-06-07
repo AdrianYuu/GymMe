@@ -14,6 +14,16 @@ namespace GymMe.Controllers
 	{
 		public static Response<List<TransactionDetail>> GetTransactionDetailsByTransactionId(int transacitonId)
 		{
+			if (transacitonId <= 0)
+			{
+				return new Response<List<TransactionDetail>>()
+				{
+					Success = false,
+					Message = "Transaction ID is not valid.",
+					Payload = null
+				};
+			}
+
 			return TransactionDetailHandler.GetTransactionDetailsByTransactionId(transacitonId);
 		}
 	}

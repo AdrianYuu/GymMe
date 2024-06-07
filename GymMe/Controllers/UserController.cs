@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
+using System.Web.Util;
 
 namespace GymMe.Controllers
 {
@@ -19,6 +21,27 @@ namespace GymMe.Controllers
 
 		public static Response<List<MsUser>> GetUsersByRole(string role)
 		{
+			string errorMsg = string.Empty;
+
+			if (role == string.Empty)
+			{
+				errorMsg = "Role is required.";
+			}
+			else if(role != "Admin" && role != "Customer")
+			{
+				errorMsg = "Role must be 'Admin' or 'Customer'.";
+			}
+
+			if (!errorMsg.Equals(string.Empty))
+			{
+				return new Response<List<MsUser>>()
+				{
+					Success = false,
+					Message = errorMsg,
+					Payload = null
+				};
+			}
+
 			return UserHandler.GetUsersByRole(role);
 		}
 
@@ -58,7 +81,7 @@ namespace GymMe.Controllers
 			}
 			else if(!email.EndsWith(".com"))
 			{
-				errorMsg = "Email must ends with '.com'";
+				errorMsg = "Email must ends with '.com'.";
 			}
 			else if(!Helper.IsAlphaNumeric(password))
 			{
@@ -66,7 +89,7 @@ namespace GymMe.Controllers
 			}
 			else if(password != confirmPassword)
 			{
-				errorMsg = "Password must be the same with confirm password";
+				errorMsg = "Password must be the same with confirm password.";
 			}
 
 			if (!errorMsg.Equals(string.Empty))
@@ -84,6 +107,16 @@ namespace GymMe.Controllers
 
 		public static Response<MsUser> LoginUserByCookie(string cookie)
 		{
+			if(cookie == string.Empty)
+			{
+				return new Response<MsUser>()
+				{
+					Success = false,
+					Message = "Cookie is not valid.",
+					Payload = null
+				};
+			}
+
 			return UserHandler.LoginUserByCookie(cookie);
 		}
 
@@ -91,7 +124,11 @@ namespace GymMe.Controllers
 		{
 			string errorMsg = string.Empty;
 
-			if (username == string.Empty || email == string.Empty || gender == string.Empty || dob == string.Empty)
+			if(userId <= 0)
+			{
+				errorMsg = "User ID is not valid.";
+			}
+			else if (username == string.Empty || email == string.Empty || gender == string.Empty || dob == string.Empty)
 			{
 				errorMsg = "All fields is required to be filled.";
 			}
@@ -121,7 +158,11 @@ namespace GymMe.Controllers
 		{
 			string errorMsg = string.Empty;
 
-			if(oldPassword == string.Empty || newPassword == string.Empty)
+			if (userId <= 0)
+			{
+				errorMsg = "User ID is not valid.";
+			}
+			else if (oldPassword == string.Empty || newPassword == string.Empty)
 			{
 				errorMsg = "All fields is required to be filled.";
 			}
