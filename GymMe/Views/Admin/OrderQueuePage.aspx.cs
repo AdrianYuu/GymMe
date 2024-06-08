@@ -27,7 +27,8 @@ namespace GymMe.Views.Admin
 			if (!IsPostBack)
 			{
 				MsUser user = Session["user"] as MsUser;
-				if (user != null && user.UserRole != "Admin")
+
+				if (user.UserRole != "Admin")
 				{
 					Response.Redirect("~/Views/HomePage.aspx");
 				}

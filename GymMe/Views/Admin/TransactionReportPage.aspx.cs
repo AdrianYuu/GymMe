@@ -17,6 +17,7 @@ namespace GymMe.Views.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             MsUser user = Session["user"] as MsUser;
+
             if (user.UserRole != "Admin") Response.Redirect("~/Views/HomePage.aspx");
 
             var firstResponse = TransactionHeaderController.GetTransactionHeaders();
@@ -71,21 +72,21 @@ namespace GymMe.Views.Admin
                 supplementTypeTable.Rows.Add(supplementTypeTableRow);
             }
 
-            foreach (TransactionHeader t in transactionHeaders)
+            foreach (TransactionHeader x in transactionHeaders)
             {
                 var transactionHeaderTableRow = transactionHeaderTable.NewRow();
-                transactionHeaderTableRow["TransactionID"] = t.TransactionID;
-                transactionHeaderTableRow["UserID"] = t.UserID;
-                transactionHeaderTableRow["TransactionDate"] = t.TransactionDate;
-                transactionHeaderTableRow["Status"] = t.Status;
+                transactionHeaderTableRow["TransactionID"] = x.TransactionID;
+                transactionHeaderTableRow["UserID"] = x.UserID;
+                transactionHeaderTableRow["TransactionDate"] = x.TransactionDate;
+                transactionHeaderTableRow["Status"] = x.Status;
                 transactionHeaderTable.Rows.Add(transactionHeaderTableRow);
 
-                foreach (TransactionDetail x in t.TransactionDetails)
+                foreach (TransactionDetail y in x.TransactionDetails)
                 {
                     var transactionDetailRow = transactionDetailTable.NewRow();
-                    transactionDetailRow["TransactionID"] = t.TransactionID;
-                    transactionDetailRow["SupplementID"] = x.SupplementID;
-                    transactionDetailRow["Quantity"] = x.Quantity;
+                    transactionDetailRow["TransactionID"] = x.TransactionID;
+                    transactionDetailRow["SupplementID"] = y.SupplementID;
+                    transactionDetailRow["Quantity"] = y.Quantity;
                     transactionDetailTable.Rows.Add(transactionDetailRow);
                 }
             }

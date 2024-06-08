@@ -75,13 +75,17 @@ namespace GymMe.Controllers
 			{
 				errorMsg = "All fields is required to be filled.";
 			}
-			else if((username.Length < 5 || username.Length > 15) || !username.Contains(" "))
+			else if(username.Length < 5 || username.Length > 15 || !username.Contains(" "))
 			{
 				errorMsg = "Username length must be between 5 and 15 also with space.";
 			}
 			else if(!email.EndsWith(".com"))
 			{
 				errorMsg = "Email must ends with '.com'.";
+			}
+			else if(gender != "Male" && gender != "Female")
+			{
+				errorMsg = "Gender must be 'Male' or 'Female'";
 			}
 			else if(!Helper.IsAlphaNumeric(password))
 			{

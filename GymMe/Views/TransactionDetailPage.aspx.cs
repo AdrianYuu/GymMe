@@ -21,7 +21,7 @@ namespace GymMe.Views
         {
             if (!IsPostBack)
             {
-                int transactionId = Convert.ToInt32(Request.QueryString["transactionid"]);
+                int transactionId = Convert.ToInt32(Request.QueryString["transactionId"]);
                 RefreshGridView(transactionId);
             }
         }

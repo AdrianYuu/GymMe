@@ -4,5 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <CR:CrystalReportViewer ID="CrystalReportViewer" runat="server" AutoDataBind="true" />
+    <div class="d-flex justify-content-center">
+        <CR:CrystalReportViewer ID="CrystalReportViewer" runat="server" AutoDataBind="true" />
+    </div>
 </asp:Content>
